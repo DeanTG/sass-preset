@@ -1,0 +1,23 @@
+{
+  "name": "sass-preset",
+  "version": "1.0.0",
+  "description": "sass utils",
+  "main": "sass-preset.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeanTG/sass-preset.git"
+  },
+  "keywords": [
+    "sass",
+    "utils"
+  ],
+  "author": "deantg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeanTG/sass-preset/issues"
+  },
+  "homepage": "https://github.com/DeanTG/sass-preset#readme"
+}

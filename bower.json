@@ -1,0 +1,21 @@
+{
+  "name": "sass-preset",
+  "description": "sass utils",
+  "main": "sass-preset.scss",
+  "authors": [
+    "deantg"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sass",
+    "utils"
+  ],
+  "homepage": "https://github.com/DeanTG/sass-preset",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

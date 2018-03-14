@@ -1,0 +1,84 @@
+/* variable */
+
+$border: solid 1px #e5e5e5;
+$theme-color: #000;
+$font-color: #000;
+
+td,
+th,
+input,
+textarea,
+select {
+  border: $border;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: $font-color;
+}
+
+@mixin border1px($direction: bottom, $color: #e5e5e5) {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $color;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    z-index: 1;
+    @if $direction=='top' {
+      height: 1px;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    @else if $direction=='right' {
+      width: 1px;
+      -webkit-transform: scaleX(0.5);
+      transform: scaleX(0.5);
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+    @else if $direction=='left' {
+      width: 1px;
+      -webkit-transform: scaleX(0.5);
+      transform: scaleX(0.5);
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+    @else {
+      height: 1px;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin text-overflow ($line: 1) {
+  @if $line==1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+  }
+}
