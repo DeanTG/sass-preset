@@ -1,7 +1,7 @@
 {
   "name": "sass-preset",
   "description": "sass utils",
-  "main": "sass-preset.scss",
+  "main": "_sass-preset.scss",
   "version": "1.0.0",
   "authors": [
     "deantg"
