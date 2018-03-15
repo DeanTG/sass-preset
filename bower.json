@@ -2,7 +2,7 @@
   "name": "sass-preset",
   "description": "sass utils",
   "main": "_sass-preset.scss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "deantg"
   ],
